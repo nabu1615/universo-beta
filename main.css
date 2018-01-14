@@ -59,3 +59,17 @@ aside {
     top: 200px;
     right: 160px;
 }
+
+.space-two {
+    position: absolute;
+    top: 250px;
+    right: 220px;
+}
+
+.person {
+    width: 20px;
+    height: 40px;
+    background-image: url('person.png');
+    background-size: 100%; 
+    position: absolute;
+}

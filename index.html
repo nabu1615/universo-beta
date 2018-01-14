@@ -12,13 +12,20 @@
         <div class="content">
             <div class="land">
                 <div ondrop="startDrop(event)" ondragover="allowDrop(event)" class="land__spaces space-one"></div>
+                <div ondrop="startDrop(event)" ondragover="allowDrop(event)" class="land__spaces space-two"></div>
+                <div class="person"></div>
             </div>
         </div>
         <aside>
             <div ondrop="startDrop(event)" ondragover="allowDrop(event)"  class="objects">
-                <img draggable="true" ondragstart="startDrag(event)" id="1" class="image" src="home.png" alt="">
+                <img draggable="true" ondragstart="startDrag(event)" id="1" class="image active_modal" src="home.png" alt="">
+            </div>
+            <div ondrop="startDrop(event)" ondragover="allowDrop(event)"  class="objects">
+                <img draggable="true" ondragstart="startDrag(event)" id="2" class="image active_modal" src="home.png" alt="">
             </div>
         </aside>
+
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
