@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,16 +16,30 @@
                 <div ondrop="startDrop(event)" ondragover="allowDrop(event)" class="land__spaces space-two"></div>
                 <div class="person"></div>
             </div>
+            <button class="save">Save Me</button>
         </div>
         <aside>
             <div ondrop="startDrop(event)" ondragover="allowDrop(event)"  class="objects">
-                <img draggable="true" ondragstart="startDrag(event)" id="1" class="image active_modal" src="home.png" alt="">
+                <img draggable="true" data-modal="#modal" ondragstart="startDrag(event)" id="1" class="image active_modal" src="home.png" alt="">
             </div>
             <div ondrop="startDrop(event)" ondragover="allowDrop(event)"  class="objects">
-                <img draggable="true" ondragstart="startDrag(event)" id="2" class="image active_modal" src="home.png" alt="">
+                <img draggable="true" data-modal="#modal" ondragstart="startDrag(event)" id="2" class="image active_modal" src="home.png" alt="">
             </div>
         </aside>
 
+        </div>
+    </div>
+    <!-- The modal, wrapped in an overlay -->
+    <div class="overlay">
+        <div class="modal" id="modal">
+            <!-- close trigger -->
+            <div class="close">
+            <span>X</span>
+            </div>
+            <!-- modal content -->
+            <div class="modal-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed est vitae, iure quae nostrum cupiditate, debitis facere, qui sit optio quibusdam molestias veniam illo. Obcaecati ea aspernatur beatae fugit consequatur!</p>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
