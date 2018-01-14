@@ -1,0 +1,61 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+.wrapper {
+    font-size: 0;
+}
+
+.content {
+    display: inline-block;
+    width: 80%;
+    height: 100vh;
+}
+
+.land {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url('base_03.png');
+    background-size: 100%;
+    position: relative;
+}
+
+.land__spaces {
+    border:1px dotted green;
+    width: 50px;
+    height: 50px;  
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    height: 100vh;
+    vertical-align: top;
+    background: blue;
+}
+
+.objects {
+    border:1px dotted pink;
+    width: 50px;
+    height: 50px;  
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.space-one {
+    position: absolute;
+    top: 200px;
+    right: 160px;
+}
